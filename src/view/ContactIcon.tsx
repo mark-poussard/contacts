@@ -8,6 +8,7 @@ interface IContactIconProps{
 }
 
 const ContactIcon : React.FunctionComponent<IContactIconProps> = props => {
+    const iconColor = props.contact.getColor();
     const smallStyle = {
         width: "50px",
         height: "50px",
@@ -23,7 +24,8 @@ const ContactIcon : React.FunctionComponent<IContactIconProps> = props => {
         marginBottom: "20px",
     }
     const style = Object.assign({
-        backgroundColor : props.contact.getColor()
+        backgroundColor : iconColor.toCssString(),
+        color : iconColor.getTextColor().toCssString(),
     }, (props.small ? smallStyle : bigStyle));
     return (
         <div className={`ContactIcon`}

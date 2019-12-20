@@ -1,5 +1,6 @@
 import React from 'react';
-import { PhoneIcon } from './icon/FontAwesome';
+import { PhoneRoundIcon } from './icon/round/RoundIcon';
+import './Phone.scss';
 
 interface IPhoneProps{
     phone : string;
@@ -7,10 +8,10 @@ interface IPhoneProps{
 
 const Phone : React.FunctionComponent<IPhoneProps> = props => {
     return (
-        <div>
-            <PhoneIcon />
-            <a href={`tel:${props.phone}`}>{props.phone}</a>
-        </div>
+        <a className={`Phone`} href={`tel:${props.phone}`}>
+            <PhoneRoundIcon className={`phone-icon`} />
+            {props.phone}
+        </a>
     )
 }
 export default Phone;

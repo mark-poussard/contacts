@@ -50,4 +50,8 @@ export default class Contact{
 
         return new Contact(id, firstname, lastname, email, phone);
     }
+
+    static compare = (a : Contact, b : Contact) => {
+        return a.getFullName().localeCompare(b.getFullName());
+    }
 }

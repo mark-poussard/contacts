@@ -1,0 +1,18 @@
+.RoundIcon{
+    border : solid black 3px;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    display: inline-block;
+    text-align: center;
+
+    .content{
+        vertical-align: middle;
+    }
+}
+
+.wrap-round-icon{
+    width: 46px;
+}

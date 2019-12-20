@@ -1,5 +1,6 @@
 import React from 'react';
-import { EmailIcon } from './icon/FontAwesome';
+import { EmailRoundIcon } from './icon/round/RoundIcon';
+import './Email.scss';
 
 interface IEmailProps{
     email : string;
@@ -7,10 +8,10 @@ interface IEmailProps{
 
 const Email : React.FunctionComponent<IEmailProps> = props => {
     return (
-        <div>
-            <EmailIcon />
-            <a href={`mailto:${props.email}`}>{props.email}</a>
-        </div>
+        <a className={`Email`} href={`mailto:${props.email}`}>
+            <EmailRoundIcon className={`email-icon`}/>
+            {props.email}
+        </a>
     );
 }
 export default Email;
