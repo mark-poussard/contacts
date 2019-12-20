@@ -1,13 +1,13 @@
 {
-  "main.css": "/contacts/static/css/main.7aefc0b7.chunk.css",
-  "main.js": "/contacts/static/js/main.81f140ed.chunk.js",
-  "main.js.map": "/contacts/static/js/main.81f140ed.chunk.js.map",
+  "main.css": "/contacts/static/css/main.5250fe41.chunk.css",
+  "main.js": "/contacts/static/js/main.60d7dc9b.chunk.js",
+  "main.js.map": "/contacts/static/js/main.60d7dc9b.chunk.js.map",
   "static/js/1.a41872ef.chunk.js": "/contacts/static/js/1.a41872ef.chunk.js",
   "static/js/1.a41872ef.chunk.js.map": "/contacts/static/js/1.a41872ef.chunk.js.map",
   "runtime~main.js": "/contacts/static/js/runtime~main.05afaf23.js",
   "runtime~main.js.map": "/contacts/static/js/runtime~main.05afaf23.js.map",
-  "static/css/main.7aefc0b7.chunk.css.map": "/contacts/static/css/main.7aefc0b7.chunk.css.map",
+  "static/css/main.5250fe41.chunk.css.map": "/contacts/static/css/main.5250fe41.chunk.css.map",
   "index.html": "/contacts/index.html",
-  "precache-manifest.40ce76de7f0631265d4e5a6d2883e598.js": "/contacts/precache-manifest.40ce76de7f0631265d4e5a6d2883e598.js",
+  "precache-manifest.1d38bebbd4bcf7de1c8d73f72c06664d.js": "/contacts/precache-manifest.1d38bebbd4bcf7de1c8d73f72c06664d.js",
   "service-worker.js": "/contacts/service-worker.js"
 }
