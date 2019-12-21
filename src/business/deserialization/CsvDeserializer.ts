@@ -15,9 +15,10 @@ class CsvDeserializer{
                     headerInit = true;
                 }
                 else{
-                    const deserializedValue : {[field : string] : string} = {};
+                    const deserializedValue : {[field : string] : string | undefined} = {};
                     for(let i=0; i<values.length;i++){
-                        deserializedValue[header[i]] = values[i];
+                        const value = (values[i].length > 0)?values[i]:undefined;
+                        deserializedValue[header[i]] = value;
                     }
                     deserializedArray.push(deserializedValue);
                 }

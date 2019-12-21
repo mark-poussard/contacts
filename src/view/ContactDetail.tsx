@@ -16,8 +16,10 @@ const ContactDetail : React.FunctionComponent<IContactDetailProps> = props => {
             <div className={`contact-detail-content`}>
                 <ContactIcon contact={props.contact} />
                 <span>{props.contact.getFullName()}</span>
-                <Email email={props.contact.getEmail()} />
-                <Phone phone={props.contact.getPhone()} />
+                {props.contact.getEmail() != null && 
+                    <Email email={props.contact.getEmail()!} />}
+                {props.contact.getPhone() != null && 
+                    <Phone phone={props.contact.getPhone()!} />}
             </div>
         </div>
     );
